@@ -48,8 +48,8 @@ if not os.path.exists(args.temp_dir):
 	print("makedirs", args.temp_dir)
 	os.makedirs(args.temp_dir)
 
-# Get list of files for enrolling template, just "xxx_1_x.jpg" files are selected
-files = glob(os.path.join(args.data_dir, "*_1_*.jpg"))
+# Get list of files for enrolling template, just "xxx_x_x.jpg" files are selected
+files = glob(os.path.join(args.data_dir, "*_*_*.jpg"))
 n_files = len(files)
 print("Number of files for enrolling:", n_files)
 
